@@ -8,3 +8,23 @@
     display: flex;
     justify-content: space-around;
 }
+
+.fondoLogo{
+    background-image: url("../media/img/sonyps5-03.png");
+    background-size: 100%;
+    width: 1rem;
+    height: 1.5rem;    
+    background-repeat: no-repeat;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.fondops5{
+    background-image: url("../media/img/sonyps5-01.jpg");
+    background-size: 100%;
+    width: 10rem;
+    height: 15rem;    
+    background-repeat: no-repeat;
+    padding: 1rem;
+    margin: 1rem;
+}
