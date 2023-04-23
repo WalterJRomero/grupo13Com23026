@@ -33,8 +33,8 @@ body{
 .fondoLogo{
     background-image: url("../media/img/sonyps5-05.jpg");
     background-size: 100%;
-    width: 6rem;
-    height: 6rem;    
+    width: 15rem;
+    height: 5rem;    
     background-repeat: no-repeat;
     padding: 1rem;
     margin: 1rem;
@@ -56,3 +56,18 @@ body{
     display: flex;    
     justify-content: center;
 }
+
+.header{
+    display: flex;
+    justify-content: center;
+
+}
+
+/* MEDIAS */
+
+@media only screen and (min-width: 416px) and (max-width: 966px) {
+
+}
+  
+@media only screen and (min-width: 967px) {
+    }
