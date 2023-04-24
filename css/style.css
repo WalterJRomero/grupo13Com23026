@@ -1,6 +1,6 @@
 *{
-    margin: 0 px;
-    padding: 0 px;    
+    margin: 0px;
+    padding: 0px;    
 }
 
 body{
@@ -15,28 +15,44 @@ body{
     font-size: 3rem;
 }
 
+.texto-separado{
+    margin: 1rem;
+}
+
 .texto-alineado-centro{
     text-align: center;
 }
 
+.texto-azul{
+    color: blue;
+}
+
+.nav{
+    background-color: gray;
+}
 .navbar{
     display: flex;
-    justify-content: space-around;
-    list-style: none; 
-    text-align: center;     
+    justify-content: space-around;   
+    list-style: none;       
+    text-align: center;
+    margin:0.3rem;
+    padding: 0.3rem;
+    min-width: 80%;
 }
 
 .navbar li a{  
-    text-decoration: none;
+    text-decoration: none;    
+    text-align: center;   
+    color: white;
 }
 
 .fondoLogo{
     background-image: url("../media/img/sonyps5-05.jpg");
-    background-size: 100%;
-    width: 15rem;
-    height: 5rem;    
-    background-repeat: no-repeat;
-    padding: 1rem;
+    background-position: center;
+    background-size: 80%;
+    width: 90%;
+    height:5rem;    
+    background-repeat: no-repeat;   
     margin: 1rem;
 }
 
@@ -59,6 +75,7 @@ body{
 
 .header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
 }
