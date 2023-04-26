@@ -29,6 +29,7 @@ body{
 
 .nav{
     background-color: gray;
+    width: 100%;
 }
 .navbar{
     display: flex;
@@ -36,8 +37,7 @@ body{
     list-style: none;       
     text-align: center;
     margin:0.3rem;
-    padding: 0.3rem;
-    min-width: 80%;
+    padding: 0.3rem;   
 }
 
 .navbar li a{  
@@ -46,14 +46,26 @@ body{
     color: white;
 }
 
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar li a:hover{
+    border-bottom: blue 2px solid;
+    border-top: blue 2px solid;
+    color: lightskyblue;
+}
+
 .fondoLogo{
     background-image: url("../media/img/sonyps5-05.jpg");
     background-position: center;
-    background-size: 80%;
-    width: 90%;
-    height:5rem;    
-    background-repeat: no-repeat;   
-    margin: 1rem;
+    background-size: 65%;    
+    height: 4rem;       
+    background-repeat: no-repeat;     
 }
 
 .fondops5{
