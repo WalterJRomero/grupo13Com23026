@@ -28,22 +28,24 @@ body{
 }
 
 .nav{
-    background-color: gray;
+    background-color: white;
     width: 100%;
+    height: 2rem;
+    border-top: black 3px solid;
+    border-bottom: black 3px solid;
 }
 .navbar{
     display: flex;
     justify-content: space-around;   
     list-style: none;       
     text-align: center;
-    margin:0.3rem;
-    padding: 0.3rem;   
+    margin:0.3rem;    
 }
 
 .navbar li a{  
     text-decoration: none;    
     text-align: center;   
-    color: white;
+    color: black
 }
 
 .fixed-top{
@@ -55,9 +57,9 @@ body{
 }
 
 .navbar li a:hover{
-    border-bottom: blue 2px solid;
-    border-top: blue 2px solid;
-    color: lightskyblue;
+    border-bottom: black 2px solid;
+    border-top: black 2px solid;
+    color: black;
 }
 
 .fondoLogo{
@@ -89,7 +91,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    margin-top:0.1rem
 }
 
 /* MEDIAS */
