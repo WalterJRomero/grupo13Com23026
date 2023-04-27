@@ -23,6 +23,9 @@ body{
     text-align: center;
 }
 
+.enlace-sin-estilo{
+    text-decoration: none;
+}
 .texto-azul{
     color: blue;
 }
@@ -43,8 +46,7 @@ body{
 }
 
 .navbar li a{  
-    text-decoration: none;    
-    text-align: center;   
+    text-decoration: none;     
     color: black
 }
 
@@ -94,6 +96,21 @@ body{
     margin-top:0.1rem
 }
 
+.main-class{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer-class{
+    background-color:darkgray;      
+    height: 5rem;  
+    padding-top: 0.5rem;
+}
+
+.derechos{
+    color: black;
+    padding-top:0.5rem;
+}
 /* MEDIAS */
 
 @media only screen and (min-width: 416px) and (max-width: 966px) {
