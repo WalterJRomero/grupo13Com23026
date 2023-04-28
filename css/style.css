@@ -117,10 +117,16 @@ body{
     width: 1.2rem;
     height: 1.2rem;
     margin-right: -1rem;
+
+    
 }
+
+
 /* MEDIAS */
 
 @media only screen and (min-width: 416px) and (max-width: 966px) {
+ /* falta agregar media para imagen header */
+ /* retirar logo chico de vista mobile, hidden */
 
 }
   
