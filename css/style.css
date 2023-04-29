@@ -1,6 +1,6 @@
 *{
-    margin: 0 px;
-    padding: 0 px;    
+    margin: 0px;
+    padding: 0px;    
 }
 
 body{
@@ -15,29 +15,62 @@ body{
     font-size: 3rem;
 }
 
+.texto-separado{
+    margin: 1rem;
+}
+
 .texto-alineado-centro{
     text-align: center;
 }
 
+.enlace-sin-estilo{
+    text-decoration: none;
+}
+.texto-azul{
+    color: blue;
+}
+
+.nav{
+    background-color: white;
+    width: 100%;
+    height: 2rem;
+    border-top: black 3px solid;
+    border-bottom: black 3px solid;
+}
 .navbar{
     display: flex;
-    justify-content: space-around;
-    list-style: none; 
-    text-align: center;     
+    justify-content: space-around;   
+    list-style: none;       
+    text-align: center;
+    margin:0.3rem;   
+    padding-top: 0.1rem; 
 }
 
 .navbar li a{  
-    text-decoration: none;
+    text-decoration: none;     
+    color: black
+}
+
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar li a:hover{
+    border-bottom: black 2px solid;
+    border-top: black 2px solid;
+    color: black;
 }
 
 .fondoLogo{
     background-image: url("../media/img/sonyps5-05.jpg");
-    background-size: 100%;
-    width: 15rem;
-    height: 5rem;    
-    background-repeat: no-repeat;
-    padding: 1rem;
-    margin: 1rem;
+    background-position: center;
+    background-size: 65%;    
+    height: 4rem;       
+    background-repeat: no-repeat;     
 }
 
 .fondops5{
@@ -59,13 +92,41 @@ body{
 
 .header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
+    margin-top:0.1rem
 }
+
+.main-class{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer-class{
+    background-color:darkgray;      
+    height: 5rem;  
+    padding-top: 0.5rem;
+}
+
+.derechos{
+    color: black;
+    padding-top:0.5rem;    
+}
+
+.logo{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: -1rem;
+
+    
+}
+
 
 /* MEDIAS */
 
 @media only screen and (min-width: 416px) and (max-width: 966px) {
+ /* falta agregar media para imagen header */
+ /* retirar logo chico de vista mobile, hidden */
 
 }
   
