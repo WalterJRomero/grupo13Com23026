@@ -48,9 +48,9 @@
     <main>
        
         
-        <form class="Formulario">
+        <div class="formulario"> <form>
             
-            <fieldset class="Nombre">
+            <div class="datos"> <fieldset>
                 <legend>Informacion personal</legend>
                 <li><label>Nombre</label>
                 <input type="text" id="nombre" name="nombre"></li>
@@ -58,22 +58,30 @@
                 <li><label>Apellido</label>
                 <input type="text" id="apellido" name="apellido"></li>
 
+                <li><label>Celular</label>
+                <input type="number" id="Numero" name="celular"></li>
+                <!--Aca habria que ver para q no sea seleccion de numero sino para colocar tipo celular-->
+                    
+                <li><label>Localidad</label>
+                <input type="text" id="Localidad" name="ciudad"></li>    
+
                 <li><label>Email</label>
                 <input type="email" id="email" name="email"></li>                    
-            </fieldset> 
-       
-            <fieldset class="opciones" >
+            </fieldset> </div>
+        
+        
+           <div class="opciones"> <fieldset>
                 <legend>Otras opciones</legend>
                 <select name="opciones">
-                    <option value="1">primero</option>
-                    <option value="2">segundo</option>
-                    <option value="3">tercero</option>
+                    <option value="1">Primero</option>
+                    <option value="2">Segundo</option>
+                    <option value="3">Tercero</option>
                 </select>
             
-            </fieldset>
+            </fieldset> </div>
         
-            <button type="submit">Enviar formulario</button>
-        </form>
+            <button type="submit">Enviar Formulario</button>
+        </form> </div>
     
     </main>
     <footer class="footer-class texto-alineado-centro">
