@@ -145,23 +145,44 @@ body{
     background-position: center;  
 }
 
+.Formulario{
+    display: flex;    
+    flex-flow: column;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 300px;
+    
+    
+    
+ }
+
+ 
+
+
 /* MEDIAS */
 
 @media only screen and (min-width: 416px) and (max-width: 966px) {
  /* falta agregar media para imagen header */
  /* retirar logo chico de vista mobile, hidden */
+ 
  .fondoLogo{
     background-image: url("../media/img/sonyps5-05.jpg");
     background-position: center;
     background-size: contain;    
     height: 5rem;       
-    background-repeat: no-repeat;     
+    background-repeat: no-repeat; 
+
+  
 }
 
 
 }
   
 @media only screen and (min-width: 967px) {
+    
     .fondoLogo{        
         background-size: contain;              
         height: 6rem;  

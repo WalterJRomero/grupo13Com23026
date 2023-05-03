@@ -47,29 +47,34 @@
     </header>
     <main>
        
-
-        <form>
-            <fieldset>
+        
+        <form class="Formulario">
+            
+            <fieldset class="Nombre">
                 <legend>Informacion personal</legend>
-                <label>Nombre</label>
-                <input type="text" id="nombre" name="nombre">
+                <li><label>Nombre</label>
+                <input type="text" id="nombre" name="nombre"></li>
 
-                <label>Apellido</label>
-                <input type="text" id="apellido" name="apellido">
+                <li><label>Apellido</label>
+                <input type="text" id="apellido" name="apellido"></li>
 
-                <label>Email</label>
-                <input type="email" id="email" name="email">                    
-            </fieldset>
-            <fieldset>
+                <li><label>Email</label>
+                <input type="email" id="email" name="email"></li>                    
+            </fieldset> 
+       
+            <fieldset class="opciones" >
                 <legend>Otras opciones</legend>
                 <select name="opciones">
                     <option value="1">primero</option>
                     <option value="2">segundo</option>
                     <option value="3">tercero</option>
                 </select>
+            
             </fieldset>
+        
             <button type="submit">Enviar formulario</button>
         </form>
+    
     </main>
     <footer class="footer-class texto-alineado-centro">
         <div >
