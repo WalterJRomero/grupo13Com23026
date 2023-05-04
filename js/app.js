@@ -15,19 +15,24 @@ function getURL(){
 const URLGET = "https://www.dolarsi.com/api/api.php?type=valoresprincipales";
 let dolarJSON=[];
 let dolarBlue =Number();
-let precioGodOfWar = 70
-let precioHorizon = 60
-let precioHarry = 70
-
 getURL()
-console.log("este es el precio del dolar blue " + dolarBlue)
+let precioGodOfWar = 70
+let precioHarry = 60
+let precioHorizon = 50
+let valorGow= $("#valorGodOfWar")
+let valorHarry=$("#valorHowgarts")
+let valorHorizon=$("#valorHorizonFW")
 
 precioGodOfWar = precioGodOfWar*dolarBlue
-precioHorizon = precioHorizon*dolarBlue
 precioHarry = precioHarry*dolarBlue
+precioHorizon = precioHorizon*dolarBlue
 
+console.log("este es el precio del dolar blue " + dolarBlue)
 console.log("este es el valor del god of war: "+ precioGodOfWar)
-
 console.log("este es el valor de harry : "+precioHarry)
-
 console.log("este es el valor de horizon: "+precioHorizon)
+
+valorGow.append(precioGodOfWar)
+valorHarry.append(precioHarry)
+valorHorizon.append(precioHorizon)
+
