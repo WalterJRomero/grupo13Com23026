@@ -134,7 +134,7 @@ body{
 }
 
 .fondops5-consola{
-    background-image: url("../media/img/sonyPs5-horizontal.png");    
+    background-image: url("../media/img/sonyps5-13.jpg");    
 }
 
 .GodOfWar{
@@ -146,7 +146,36 @@ body{
 }
 
 .Horizon{
-    background-image: url("../media/img/Ps5-Juegos-04.jpg");   
+    background-image: url("../media/img/Ps5-Juegos-05.jpeg");   
+}
+
+.Mando{
+    background-image: url("../media/img/sonyPs5-mandoLateral.png");
+}
+
+.Ps5{
+    background-image: url("../media/img/sonyps5-12.jpeg");
+}
+
+.MandoYps{
+    background-image: url("../media/img/sonyPs5-parte.png");
+}
+
+.Camara{
+    background-image: url("../media/img/sonyPs5-Camara.jpg");
+}
+
+.Sony1{
+    background-image: url("../media/img/sonyPs5-horizontal.png");
+
+}
+
+.Sony2{
+    background-image: url("../media/img/sonyps5-02.jpg");
+}
+
+.Sony3{
+    background-image: url("../media/img/sonyps5-10.png")
 }
 
 .formulario{
