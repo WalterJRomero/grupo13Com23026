@@ -5,8 +5,8 @@ function getURL(){
     } else {$.get(URLGET, function (respuesta, estado) {
         if(estado === "success"){
           let misDatos = respuesta;          
-          let dolar=misDatos[1];//en esta posicion esta el valor del dolar que quiero obtener, es el dolar aplicado con el 65% de impuestos.          
-          dolarBlue=dolar.casa.venta; //y de ese dolar turista elijo el valor de venta, que lo utilizo para hacer el calculo contra pesos argentinos       
+          let dolar=misDatos[1];//en esta posicion esta el valor del dolar que quiero obtener         
+          dolarBlue=dolar.casa.venta; //y de ese dolar blue elijo el valor de venta, que lo utilizo para hacer el calculo contra pesos argentinos       
           sessionStorage.setItem("dolarJSON",JSON.stringify(dolarBlue));//guardo en mi session storage el valor
         }});
     }    
