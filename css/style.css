@@ -71,10 +71,8 @@ body{
     background-size: 65%;    
     height: 4rem;       
     background-repeat: no-repeat;    
-    margin-bottom: 0.5rem; 
+    margin-bottom: 0.5rem;
 }
-
-
 
 .descripcion{
     display: flex;    
@@ -84,7 +82,7 @@ body{
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 6rem;
-
+    padding: 1rem;
 }
 
 .header{
@@ -116,34 +114,39 @@ body{
     margin-right: -1rem;    
 }
 
-.fondops5{
-    background-image: url("../media/img/sonyps5-ssd.png");
-    background-size: contain;    
-    min-width: 5rem;
-    height: 15rem;  
-    min-height: 10;  
-    background-repeat: no-repeat;   
-    background-position: center; 
-}
-
-.fondops5-mandofrente{
-    background-image: url("../media/img/sonyPs5-mandoFrente.png");
-    background-size: contain;    
-    min-width: 5rem;    
-    height: 15rem;  
-    min-height: 10;  
-    background-repeat: no-repeat;
-    background-position: center; 
-}
-
-.fondops5-consola{
-    background-image: url("../media/img/sonyPs5-horizontal.png");
+.imagenes{
     background-size: contain;    
     min-width: 5rem;
     height: 15rem;  
     min-height: 10;  
     background-repeat: no-repeat;   
     background-position: center;  
+    margin-bottom:0.5rem;
+    margin-top:0.5rem;
+}
+
+.fondops5{
+    background-image: url("../media/img/sonyps5-ssd.png");    
+}
+
+.fondops5-mandofrente{
+    background-image: url("../media/img/sonyPs5-mandoFrente.png");    
+}
+
+.fondops5-consola{
+    background-image: url("../media/img/sonyPs5-horizontal.png");    
+}
+
+.GodOfWar{
+    background-image: url("../media/img/Ps5-Juegos-01.jpg");        
+}
+
+.HarryPotter{
+    background-image: url("../media/img/Ps5-Juegos-02.jpg");            
+}
+
+.Horizon{
+    background-image: url("../media/img/Ps5-Juegos-04.jpg");   
 }
 
 .formulario{
@@ -173,33 +176,24 @@ body{
     font-size: medium;
 }
  
-.GodOfWar{
-    background-size: contain;    
-    min-width: 5rem;
-    height: 15rem;  
-    min-height: 10;  
-    background-repeat: no-repeat;   
-    background-position: center;  
-    
-}
 
 
 /* MEDIAS */
 
 @media only screen and (min-width: 416px) and (max-width: 966px) {
- /* falta agregar media para imagen header */
  /* retirar logo chico de vista mobile, hidden */
  
- .fondoLogo{
-    background-image: url("../media/img/sonyps5-05.jpg");
-    background-position: center;
-    background-size: contain;    
-    height: 5rem;       
-    background-repeat: no-repeat; 
+    .fondoLogo{
+        background-image: url("../media/img/sonyps5-05.jpg");
+        background-position: center;
+        background-size: contain;    
+        height: 5rem;       
+        background-repeat: no-repeat;
+    }
 
-  
-}
-
+    .descripcion{
+        padding: 2rem;
+    }
 
 }
   
@@ -208,5 +202,9 @@ body{
     .fondoLogo{        
         background-size: contain;              
         height: 6rem;  
+    }
+
+    .descripcion{
+        padding: 3rem;
     }
 }  
