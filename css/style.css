@@ -118,7 +118,7 @@ body{
     background-size: contain;    
     min-width: 5rem;
     height: 15rem;  
-    min-height: 10;  
+    min-height: 10rem;  
     background-repeat: no-repeat;   
     background-position: center;  
     margin-bottom:0.5rem;
@@ -205,12 +205,15 @@ body{
     font-size: medium;
 }
  
-
+.iframe{
+    min-width: 5rem;
+    height: 15rem;  
+    min-height: 10rem;
+}
 
 /* MEDIAS */
 
 @media only screen and (min-width: 416px) and (max-width: 966px) {
- /* retirar logo chico de vista mobile, hidden */
  
     .fondoLogo{
         background-image: url("../media/img/sonyps5-05.jpg");
