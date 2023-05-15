@@ -34,6 +34,10 @@ body{
     text-decoration: underline;
 }
 
+.marginTop{
+    margin-top: 2rem;
+}
+
 .nav{
     background-color: white;
     width: 100%;
@@ -249,6 +253,10 @@ body{
     .texto-grande{
         font-size: 3rem;
     }
+
+    .marginTop{
+        margin-top: 3rem;
+    }
 }
   
 @media only screen and (min-width: 967px) {
@@ -269,4 +277,9 @@ body{
     .texto-grande{
         font-size: 3rem;
     }
+
+    .marginTop{
+        margin-top: 3.5rem;
+    }
+
 }  
