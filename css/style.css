@@ -12,7 +12,7 @@ body{
 }
 
 .texto-grande{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .texto-separado{
@@ -28,6 +28,10 @@ body{
 }
 .texto-azul{
     color: blue;
+}
+
+.subrayado{
+    text-decoration: underline;
 }
 
 .nav{
@@ -48,7 +52,8 @@ body{
 
 .navbar li a{  
     text-decoration: none;     
-    color: black
+    color: black;
+    transition: all 0.5s;
 }
 
 .fixed-top{
@@ -62,7 +67,8 @@ body{
 .navbar li a:hover{
     border-bottom: black 2px solid;
     border-top: black 2px solid;
-    color: black;
+    color: black;    
+    font-size:1.02rem
 }
 
 .fondoLogo{
@@ -123,6 +129,10 @@ body{
     background-position: center;  
     margin-bottom:0.5rem;
     margin-top:0.5rem;
+}
+
+.bordeado{
+    border-image:3px;
 }
 
 .fondops5{
@@ -232,6 +242,13 @@ body{
         padding: 2rem;
     }
 
+    .padding-L{
+        padding: 0 3rem;    
+    }
+
+    .texto-grande{
+        font-size: 3rem;
+    }
 }
   
 @media only screen and (min-width: 967px) {
@@ -243,5 +260,13 @@ body{
 
     .descripcion{
         padding: 3rem;
+    }
+
+    .padding-L{
+        padding: 0 5rem;    
+    }
+
+    .texto-grande{
+        font-size: 3rem;
     }
 }  
