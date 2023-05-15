@@ -1,10 +1,15 @@
 *{
     margin: 0px;
-    padding: 0px;    
+    padding: 0px; 
+    box-sizing: border-box;   
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .negrita{
@@ -110,7 +115,7 @@ body{
 .footer-class{
     background-color:darkgray;      
     height: 5rem;  
-    padding-top: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 .derechos{
@@ -137,6 +142,10 @@ body{
 
 .bordeado{
     border-image:3px;
+}
+
+.sinDecorado li{
+    text-decoration: none
 }
 
 .fondops5{
@@ -195,23 +204,27 @@ body{
 .formulario{
     display: flex;    
     flex-flow: column;
-    justify-content: center;
-    text-align: justify;
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 300px;   
-    padding: 30px;
- }
+    justify-content: center;   
+    margin:1rem 1.5rem;     
+    text-decoration: none;    
+    border-color: transparent;
+    font-size: medium;
+    line-height: 1.4rem;
+    width: 100%;
+    padding: 0 0 0 2rem
+}
 
  .datos{
     border-style:groove;
     border-color: black;
     font-size: large;
-    margin: 5px
+    margin: 3rem;    
+    display: flex;
+    flex-flow: column;
+    border-radius: 1rem;
+    align-items: center;   
  }
- /*Solo le di un borde y separe un poco, habria que ver como hacemos para qe se vea en los demas dispositivos y ver
- si queremos un movimiento diferente en la pagina, el lugar mas que nada*/
+ 
 .opciones{
     margin: 5px;
     border-style:groove;
@@ -219,6 +232,17 @@ body{
     font-size: medium;
 }
  
+.bttnForm{
+    margin:0 1rem 1rem 1rem;
+    width: 50%;    
+    border-radius: 1rem;
+}
+
+.bttnForm:hover{
+    background-color: black;
+    color: white;
+}
+
 .iframe{
     min-width: 5rem;
     height: 15rem;  
@@ -257,6 +281,10 @@ body{
     .marginTop{
         margin-top: 3rem;
     }
+
+    .datos{
+        margin: 3rem 10rem;
+    }    
 }
   
 @media only screen and (min-width: 967px) {
@@ -282,4 +310,13 @@ body{
         margin-top: 3.5rem;
     }
 
+    .datos{
+        margin: 3rem;
+        width: 30rem;
+    }
+
+    .formL{
+        display: flex;
+        justify-content: center;
+    }
 }  

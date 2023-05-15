@@ -48,36 +48,39 @@
         </nav>
     </header>
     <main>        
-        <div class="formulario"> 
-            <form id="form-js">            
+        <section class="texto-alineado-centro texto-separado">
+            <h1 class="negrita texto-grande animate__animated animate__fadeInDown marginTop">Contacto</h1>
+        </section>
+        <section class="formL"> 
+            <form id="form-js" class="">            
                 <div class="datos"> 
-                    <fieldset>
-                        <legend>Informacion personal</legend>
-                        <li>
-                            <label>Nombre</label>
-                            <input type="text" id="nombre-form" name="nombre" placeholder="Ingrese su nombre" required>
-                        </li>
-                        <li>
-                            <label>Apellido</label>
+                    <fieldset class="formulario">
+                        <h3>Informacion personal</h3>
+                        <div>
+                            <p>Nombre</p>                           
+                            <input type="text" id="nombre-form" name="nombre" placeholder="Ingrese su nombre" required> 
+                        </div>
+                        <div>
+                            <p>Apellido</p>
                             <input type="text" id="apellido-form" name="apellido" placeholder="Ingrese su apellido" required>
-                        </li>                          
-                        <li>
-                            <label>Email</label>
+                        </div>
+                        <div>
+                            <p>Email</p>
                             <input type="email" id="email-1-form" name="email-1" placeholder="Ingrese su email" required>
-                        </li>  
-                        <li>
-                            <label>Confirma tu email</label>
+                        </div>
+                        <div>
+                            <p>Confirma tu email</p>
                             <input type="email" id="email-2-form" name="email-2" placeholder="Repita su email" required>
-                        </li>                          
-                        <li>
-                            <label>Mensaje:</label>
+                        </div>
+                        <div>
+                            <p>Mensaje:</p>
                             <textarea id="mensaje-form" name="mensaje-form"  placeholder ="Ingrese su mensaje aquí" maxlength="150" required></textarea>
-                        </li>                                 
+                        </div>                            
                     </fieldset>                    
+                    <button type="submit" class="bttnForm" id="button-form">Enviar Formulario</button>
                 </div>        
-                <button type="submit" id="button-form">Enviar Formulario</button>
             </form> 
-        </div>    
+        </section>    
     </main>
     <footer class="footer-class texto-alineado-centro">
         <div >
