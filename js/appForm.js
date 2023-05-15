@@ -18,9 +18,17 @@ form.addEventListener('submit', (e)=>{
   if (!emailValido.test(email.value) || email.value !== email2.value) {
     alert('Ingrese un correo electrónico válido y asegúrese de que los dos campos sean iguales');
     return;
-  }
-  
-  form.submit();
-  alert("Formulario enviado correctamente")
+  }  
+     
+  Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Formulario enviado',
+    text:'Nos contactaremos a la brevedad',
+    showConfirmButton: false,
+    timer: 2000
+  }).then(() => {
+    form.submit();     
+  });
 
 });
