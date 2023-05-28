@@ -1,10 +1,15 @@
 *{
     margin: 0px;
-    padding: 0px;    
+    padding: 0px; 
+    box-sizing: border-box;   
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;   
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .negrita{
@@ -12,7 +17,7 @@ body{
 }
 
 .texto-grande{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .texto-separado{
@@ -30,27 +35,34 @@ body{
     color: blue;
 }
 
-.nav{
-    background-color: #0057be;
-    width: 100%;
-    height: 5rem;
-    /* border-top: black 3px solid; */
-    /* border-bottom: rgb(8, 79, 99) 2px solid; */
+.subrayado{
+    text-decoration: underline;
 }
 
+.marginTop{
+    margin-top: 2rem;
+}
+
+.nav{
+    background-color: white;
+    width: 100%;
+    height: 2rem;
+    border-top: black 3px solid;
+    border-bottom: black 3px solid;
+}
 .navbar{
     display: flex;
     justify-content: space-around;   
-    list-style: none;   
-    align-items: center;
-    height: 100%;
-    /* margin:0.3rem;   
-    padding-top: 0.4rem;  */
+    list-style: none;       
+    text-align: center;
+    margin:0.3rem;   
+    padding-top: 0.1rem; 
 }
 
 .navbar li a{  
     text-decoration: none;     
-    color: rgb(255, 255, 255);
+    color: black;
+    transition: all 0.5s;
 }
 
 .fixed-top{
@@ -62,21 +74,21 @@ body{
 }
 
 .navbar li a:hover{
-    /* border-bottom: black 2px solid;
-    border-top: black 2px solid; */
-    font-weight: bold;
-    color: rgb(111, 255, 255);
-    
+    border-bottom: black 2px solid;
+    border-top: black 2px solid;
+    color: black;    
+    font-size:1.02rem
 }
 
-/* .fondoLogo{
+.fondoLogo{
     background-image: url("../media/img/sonyps5-05.jpg");
     background-position: center;
+    background-color: #1355e1;
     background-size: 65%;    
     height: 4rem;       
     background-repeat: no-repeat;    
-    margin-bottom: 0.5rem;
-} */
+    margin-bottom: 0;
+}
 
 .descripcion{
     display: flex;    
@@ -84,8 +96,8 @@ body{
     justify-content: center;
     text-align: justify;
     align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     padding: 1rem;
 }
 
@@ -93,7 +105,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* margin-top:0.1rem */
+    margin-top:0.1rem
 }
 
 .main-class{
@@ -104,7 +116,7 @@ body{
 .footer-class{
     background-color:darkgray;      
     height: 5rem;  
-    padding-top: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 .derechos{
@@ -112,31 +124,47 @@ body{
     padding-top:0.5rem;    
 }
 
-
-.btninicio{ 
-    width: 2rem;
-    height: 2rem;
-    margin-right: -1rem; 
-    transition: transform .2s;
-}
-
-.btninicio:hover{
-    transform: scale(1.1,1.1);
+.logo{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: -1rem;    
 }
 
 .imagenes{
     background-size: contain;    
     min-width: 5rem;
     height: 15rem;  
-    min-height: 10;  
+    min-height: 10rem;  
     background-repeat: no-repeat;   
     background-position: center;  
-    margin-bottom:0.5rem;
-    margin-top:0.5rem;
+    margin-bottom:2rem;
+    margin-top:2.5rem;
+}
+
+.videos{
+    background-repeat: no-repeat;   
+    background-position: center;  
+    margin-bottom:2rem;
+    margin-top:2.5rem;
+}
+
+.formback{
+    background-size: cover;
+    background-image: url("../media/img/formback.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bordeado{
+    border-image:3px;
+}
+
+.sinDecorado li{
+    text-decoration: none
 }
 
 .fondops5{
-    background-image: url("../media/img/sonyps5-ssd.png");    
+    background-image: url("../media/img/sonyps5-ssd.jpg");    
 }
 
 .fondops5-mandofrente{
@@ -144,7 +172,7 @@ body{
 }
 
 .fondops5-consola{
-    background-image: url("../media/img/sonyps5-13.jpg");    
+    background-image: url("../media/img/sonyps5-horizontal.png");    
 }
 
 .GodOfWar{
@@ -176,7 +204,7 @@ body{
 }
 
 .Sony1{
-    background-image: url("../media/img/sonyPs5-horizontal.png");
+    background-image: url("../media/img/sonyps5-13.jpg");
 
 }
 
@@ -185,69 +213,94 @@ body{
 }
 
 .Sony3{
-    background-image: url("../media/img/sonyps5-10.png")
+    background-image: url("../media/img/sonyps5-audiofinal.png")
 }
 
 .formulario{
     display: flex;    
     flex-flow: column;
-    justify-content: center;
-    text-align: justify;
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 300px;   
-    padding: 30px;
- }
+    justify-content: center;   
+    margin:1rem 1.5rem;     
+    text-decoration: none;    
+    border-color: transparent;
+    font-size: medium;
+    line-height: 1.4rem;
+    width: 100%;
+    padding: 0 0 0 2rem
+}
 
  .datos{
+    background-color: white;
     border-style:groove;
     border-color: black;
     font-size: large;
-    margin: 5px
+    margin: 3rem;    
+    display: flex;
+    flex-flow: column;
+    border-radius: 1rem;
+    align-items: center;   
  }
- /*Solo le di un borde y separe un poco, habria que ver como hacemos para qe se vea en los demas dispositivos y ver
- si queremos un movimiento diferente en la pagina, el lugar mas que nada*/
-
- .opciones{
+ 
+.opciones{
     margin: 5px;
     border-style:groove;
     border-color: black;
     font-size: medium;
 }
  
+.bttnForm{
+    margin:0 1rem 1rem 1rem;
+    width: 50%;    
+    border-radius: 1rem;
+}
 
+.bttnForm:hover{
+    background-color: black;
+    color: white;
+}
+
+.iframe{
+    min-width: 5rem;
+    height: 15rem;  
+    min-height: 10rem;
+}
+
+.trailer{
+    display: flex;
+    justify-content: center;
+}
 
 /* MEDIAS */
 
 @media only screen and (min-width: 416px) and (max-width: 966px) {
- /* retirar logo chico de vista mobile, hidden */
  
-    /* .fondoLogo{
+    .fondoLogo{
         background-image: url("../media/img/sonyps5-05.jpg");
         background-position: center;
         background-size: contain;    
         height: 5rem;       
         background-repeat: no-repeat;
-    } */
-
-    .logo{
-        transform: scale(.9,.9) ;
-    }
-    
-    .nav{
-        height: 3rem;
-    }
-
-    .navbar li{
-        transform: scale(.8,.8);
-        justify-content: space-between;
     }
 
     .descripcion{
         padding: 2rem;
     }
 
+    .padding-L{
+        padding: 0 1rem;    
+    }
+
+    .texto-grande{
+        font-size: 3rem;
+    }
+
+    .marginTop{
+        margin-top: 3rem;
+    }
+
+    .datos{
+        margin: 3rem 10rem;
+    }  
 }
   
 @media only screen and (min-width: 967px) {
@@ -259,5 +312,27 @@ body{
 
     .descripcion{
         padding: 3rem;
+    }
+
+    .padding-L{
+        padding: 0 5rem;    
+    }
+
+    .texto-grande{
+        font-size: 3rem;
+    }
+
+    .marginTop{
+        margin-top: 3.5rem;
+    }
+
+    .datos{
+        margin: 3rem;
+        width: 30rem;
+    }
+
+    .formL{
+        display: flex;
+        justify-content: center;
     }
 }  
