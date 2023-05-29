@@ -83,20 +83,21 @@ body{
 .fondoLogo{
     background-image: url("../media/img/sonyps5-05.jpg");
     background-position: center;
+    background-color: #1355e1;
     background-size: 65%;    
     height: 4rem;       
     background-repeat: no-repeat;    
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
 }
 
 .descripcion{
     display: flex;    
     flex-flow: column;
     justify-content: center;
-    text-align: center;
+    text-align: justify;
     align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     padding: 1rem;
 }
 
@@ -104,7 +105,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top:0.1rem
+    margin-top:0rem
 }
 
 .main-class{
@@ -136,8 +137,22 @@ body{
     min-height: 10rem;  
     background-repeat: no-repeat;   
     background-position: center;  
-    margin-bottom:0.5rem;
-    margin-top:0.5rem;
+    margin-bottom:2rem;
+    margin-top:2.5rem;
+}
+
+.videos{
+    background-repeat: no-repeat;   
+    background-position: center;  
+    margin-bottom:2rem;
+    margin-top:2.5rem;
+}
+
+.formback{
+    background-size: cover;
+    background-image: url("../media/img/formback.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .bordeado{
@@ -149,7 +164,7 @@ body{
 }
 
 .fondops5{
-    background-image: url("../media/img/sonyps5-ssd.png");    
+    background-image: url("../media/img/sonyps5-ssd.jpg");    
 }
 
 .fondops5-mandofrente{
@@ -157,7 +172,7 @@ body{
 }
 
 .fondops5-consola{
-    background-image: url("../media/img/sonyps5-13.jpg");    
+    background-image: url("../media/img/sonyps5-horizontal.png");    
 }
 
 .GodOfWar{
@@ -189,7 +204,7 @@ body{
 }
 
 .Sony1{
-    background-image: url("../media/img/sonyPs5-horizontal.png");
+    background-image: url("../media/img/sonyps5-13.jpg");
 
 }
 
@@ -198,7 +213,7 @@ body{
 }
 
 .Sony3{
-    background-image: url("../media/img/sonyps5-10.png")
+    background-image: url("../media/img/sonyps5-audiofinal.png")
 }
 
 .formulario{
@@ -215,6 +230,7 @@ body{
 }
 
  .datos{
+    background-color: white;
     border-style:groove;
     border-color: black;
     font-size: large;
@@ -271,7 +287,7 @@ body{
     }
 
     .padding-L{
-        padding: 0 3rem;    
+        padding: 0 1rem;    
     }
 
     .texto-grande{
@@ -284,7 +300,7 @@ body{
 
     .datos{
         margin: 3rem 10rem;
-    }    
+    }  
 }
   
 @media only screen and (min-width: 967px) {
