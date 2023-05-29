@@ -141,13 +141,6 @@ body{
     margin-top:2.5rem;
 }
 
-.videos{
-    background-repeat: no-repeat;   
-    background-position: center;  
-    margin-bottom:2rem;
-    margin-top:2.5rem;
-}
-
 .formback{
     background-size: cover;
     background-image: url("../media/img/formback.png");
@@ -172,7 +165,7 @@ body{
 }
 
 .fondops5-consola{
-    background-image: url("../media/img/sonyps5-horizontal.png");    
+    background-image: url("../media/img/sonyPs5-horizontal.png");    
 }
 
 .GodOfWar{
