@@ -28,3 +28,9 @@ Versión demo del proyecto [aquí](https://walterjromero.github.io/grupo13Com230
 - *Html5*
 - *Css3*
 - *Javascript*
+  
+### Se agrega pagina PRODUCTOS
+- *Vuejs*
+- *Bootstarp*
+- *flask*
+- *Backend alojado en pythonanywhere*
