@@ -51,24 +51,20 @@
     </header>
     <main>
         <div id="app" class="container">
-            <h1 class="h1 text-center">Productos disponibles Ps5</h1>
-            <section>
-                <a class="btn btn-primary" href="producto_nuevo.html">Nuevo</a>
-            </section>
-
-
-
-            <div v-if="error">
+            <div class="texto-grande texto-alineado-centro  animate__animated animate__fadeInDown marginTop mb-5">
+                <h1 class="negrita texto-separado">Productos disponibles Ps5</h1>
+            </div>
+            <div v-if="error" class="text-center">
                 <p>Lo sentimos , ........</p>
             </div>
             <div v-else>
-                <section v-if="cargando">
+                <section v-if="cargando" class="text-center">
                     <div class="spinner-border"></div>
-                    <p>Cargando .....</p>
+                    <p>Cargando tabla.....</p>
                 </section>
                 <section v-else>
                     <div class="table-responsive">
-                        <table class="table table-bordered">
+                        <table class="table table-bordered negrita">
                             <thead>
                                 <tr>
                                     <th scope="col">Id</th>
@@ -100,6 +96,9 @@
                     </div>
                 </section>
             </div>
+            <section class="text-center mt-3 mb-4">                
+                <a class="btn btn-primary" href="producto_nuevo.html">Nuevo producto</a>
+            </section>
         </div>
     </main>
     <footer class="footer-class texto-alineado-centro">
