@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Productos Ps5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="../media/img/favicon.ico">
+    <!-- animaciones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- estilo -->
+    <script src="https://kit.fontawesome.com/453b677898.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--descripcion pagina  -->
+    <meta name="description" content="Pagina inicial de Grupo 13">
+    <!-- seo -->
+    <meta name="keywords" content="PS5 PlayStation5 Sony PlayStation">    
+</head>
+<body>
+    <header class="headercss">
+        <a href="../index.html">
+            <div class="fondoLogo">
+            </div>
+        </a>      
+        <nav class="navcss">
+            <ul class="navbarcss">
+                <li>
+                    <a href="../index.html"><img class="logo" src="../media/img/sonyps5-logo-negro.png" alt="Logo Sony"></img></a>
+                </li>
+                <li>
+                    <a href="../index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="detalles.html">DETALLES</a>
+                </li>
+                <li>
+                    <a href="accesorios.html">ACCESORIOS</a>
+                </li>
+                <li>
+                    <a href="juegos.html">JUEGOS</a>
+                </li>
+                <li>
+                    <a href="productos.html">PRODUCTOS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="app" class="container">
+            <h1 class="h1 text-center">Productos disponibles Ps5</h1>
+            <section>
+                <a class="btn btn-primary" href="producto_nuevo.html">Nuevo</a>
+            </section>
+
+
+
+            <div v-if="error">
+                <p>Lo sentimos , ........</p>
+            </div>
+            <div v-else>
+                <section v-if="cargando">
+                    <div class="spinner-border"></div>
+                    <p>Cargando .....</p>
+                </section>
+                <section v-else>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio $</th>
+                                    <th scope="col">Stock</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="" v-for="producto in productos">
+                                    <td scope="row">{{producto.id}}</td>
+                                    <td>{{producto.nombre}}</td>
+                                    <td>{{producto.precio}}</td>
+                                    <td>{{producto.stock}}</td>
+                                    <td>
+                                        <img width="60" :src="producto.imagen" :alt="producto.nombre">
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-primary"
+                                            :href="'producto_update.html?id='+ producto.id">Editar</a>
+                                        <button type="button" class="btn btn-danger"
+                                            v-on:click="eliminar(producto.id)">Eliminar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-class texto-alineado-centro">
+        <div>
+            <a href="contacto.html"><i class="fa-regular fa-envelope"></i></a>
+            <a href="contacto.html" class="enlace-sin-estilo negrita">CONTACTO</a>
+        </div>
+        <div class="derechos negrita">
+            <p>© 2021 SONY LATIN AMERICA, INC. TODOS LOS DERECHOS RESERVADOS.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="../js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="../js/productos.js"></script>
+</body>
+</html>
