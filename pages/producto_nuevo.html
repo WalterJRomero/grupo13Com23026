@@ -27,10 +27,10 @@
         <!-- place navbar here -->
     </header>
     <main>
-        <h1 class="h1 text-center">Ingrese un nuevo producto</h1>                
+        <h1 class="h1 text-center mt-2">Ingrese un nuevo producto</h1>                
         <div class="container" id="app">
-            <div class="row align-items-start">
-                <div class="col">
+            <div class="column align-items-start">
+                <div class="">
                     <form>                   
                         <div class="mb-3">
                             <label for="nombre" class="form-label">Nombre</label>                  
@@ -48,12 +48,15 @@
                             <label for="imagen" class="form-label">Imagen</label>                  
                             <input type="text" class="form-control" name="imagen" id="imagen" v-model="imagen" aria-describedby="imagen">    
                         </div>
-                        <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>                
+                        <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar producto</button>                
                     </form>  
                 </div>
-                <div class="col">
+                <div>
                     <img :src="imagen" alt="" class="rounded mx-auto d-block"> 
                 </div>                
+                <section class="text-center mt-3 mb-4">                
+                    <a class="btn btn-primary" href="productos.html">Volver</a>
+                </section>
             </div>
         </div>
     </main>

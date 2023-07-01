@@ -26,34 +26,46 @@
         <!-- place navbar here -->
     </header>
     <main>
+        <section class="texto-alineado-centro texto-separado">
+            <h1 class="negrita texto-grande animate__animated animate__fadeInDown marginTop">Modificar producto</h1>
+        </section>        
         <div class="container" id="app">
-            <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-                <h2>Editar Producto </h2>
-                <p>Precio:{{precio}}</p>
-                <div class="mb-3">
-                    <label for="id">Id</label>
-                    <input type="number" name="id" id="id" disabled v-model="id">
-                </div>
-                <div class="mb-3">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" v-model="nombre">
-                </div>
-                <div class="mb-3">
-                    <label for="precio">Precio</label>
-                    <input type="number" name="precio" id="precio" v-model="precio">
-                </div>
-                <div class="mb-3">
-                    <label for="stock">Stock</label>
-                    <input type="number" name="stock" id="stock" v-model="stock">
-                </div>
-                <div class="mb-3">
-                    <label for="imagen">Imagen</label>
-                    <input type="text" name="imagen" id="imagen" v-model="imagen">
-                    <img width="100" :src="imagen" alt="">
-                </div>
-                <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
-            </form>
+            <div class="column align-items-start">
+                <div class="">
+                    <div class="mb-1 negrita h5">
+                        <label for="id">Id de producto:</label>                   
+                        <span id="id"></span>                                      
+                    </div>
+                    <form>                   
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>                  
+                            <input type="text" class="form-control" name="nombre" id="nombre" v-model="nombre" aria-describedby="nombre">                  
+                        </div>
+                        <div class="mb-3">
+                            <label for="precio" class="form-label">Precio</label>                  
+                            <input type="number" class="form-control" name="precio" id="precio" v-model="precio" aria-describedby="precio">                  
+                        </div>
+                        <div class="mb-3">
+                            <label for="stock" class="form-label">Stock</label>                  
+                            <input type="number" class="form-control" name="stock" id="stock" v-model="stock" aria-describedby="stock">                  
+                        </div>
+                        <div class="mb-3">
+                            <label for="imagen" class="form-label">Imagen</label>                  
+                            <input type="text" class="form-control" name="imagen" id="imagen" v-model="imagen" aria-describedby="imagen">    
+                        </div>
+                        <div class="card-body conta">
+                            <button type="button" class="btn btn-success" v-on:click="modificar()">Actualizar producto</button>                                      
+                        </div>               
+                    </form>  
+                </div>                
+                <div class="container-sm">
+                    <img :src="imagen" class="rounded mx-auto d-block img-thumbnail " alt="..." width="400" height="100">                   
+                </div>                
+            </div>
         </div>
+        <section class="text-center mt-3 mb-4">                
+            <a class="btn btn-primary" href="productos.html">Volver</a>
+        </section>
     </main>
     <footer class="footer-class texto-alineado-centro">
         <div>
@@ -75,7 +87,6 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/producto_editar.js"></script>
-    <!-- <script src="../js/sweetalertEditar.js"></script> -->
-    
+    <!-- <script src="../js/sweetalertEditar.js"></script> -->    
 </body>
 </html>

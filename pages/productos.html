@@ -55,7 +55,7 @@
                 <h1 class="negrita texto-separado">Productos disponibles Ps5</h1>
             </div>
             <div v-if="error" class="text-center">
-                <p>Lo sentimos , ........</p>
+                <p class=" alert alert-danger">No se pudo obtener información de la base de datos, por favor actualizar la pgina</p>
             </div>
             <div v-else>
                 <section v-if="cargando" class="text-center">
@@ -64,9 +64,9 @@
                 </section>
                 <section v-else>
                     <div class="table-responsive">
-                        <table class="table table-bordered negrita">
+                        <table class="table align-middle">
                             <thead>
-                                <tr>
+                                <tr class="table-primary">
                                     <th scope="col">Id</th>
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Precio $</th>
@@ -82,13 +82,11 @@
                                     <td>{{producto.precio}}</td>
                                     <td>{{producto.stock}}</td>
                                     <td>
-                                        <img width="60" :src="producto.imagen" :alt="producto.nombre">
+                                        <img width="65" :src="producto.imagen" :alt="producto.nombre">
                                     </td>
                                     <td>
-                                        <a class="btn btn-primary"
-                                            :href="'producto_update.html?id='+ producto.id">Editar</a>
-                                        <button type="button" class="btn btn-danger"
-                                            v-on:click="eliminar(producto.id)">Eliminar</button>
+                                        <a class="btn btn-primary m-2" :href="'producto_update.html?id='+ producto.id">Editar</a>
+                                        <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)">Eliminar</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -97,9 +95,9 @@
                 </section>
             </div>
             <section class="text-center mt-3 mb-4">                
-                <a class="btn btn-primary" href="producto_nuevo.html">Nuevo producto</a>
+                <a class="btn btn-success" href="producto_nuevo.html">Nuevo producto</a>
             </section>
-        </div>
+        </div>        
     </main>
     <footer class="footer-class texto-alineado-centro">
         <div>
