@@ -49,7 +49,7 @@ createApp({
                                 'success'
                             )
                             fetch(url, options)
-                                .then(res => res.text()) // or res.json()
+                                .then(res => res.text()) 
                                 .then(res => {
                                     setTimeout(time=>{location.reload()},1200)
                                 })

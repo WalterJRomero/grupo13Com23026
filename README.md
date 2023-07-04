@@ -17,7 +17,6 @@ Se realizó un sitio orientado a la consola Sony Playstation 5, en la barra nave
 - Transición en opciones de navbar.
 - Maquetada con flexbox, se puede ver en las imágenes diseñadas (detalle en css).
 - Se consume la api de dolarSi para obtener el valor del dolar blue a peso argentino en tiempo real (https://www.dolarsi.com/api/api.php?type=valoresprincipales).
-- No se utilizó BS.
 - Se alojó sitio en github pages.
 
 
@@ -29,8 +28,9 @@ Versión demo del proyecto [aquí](https://walterjromero.github.io/grupo13Com230
 - *Css3*
 - *Javascript*
   
-### Se agrega pagina PRODUCTOS
-- *Vuejs*
+### Se agrega pagina PRODUCTOS para proyecto Backend
 - *Bootstarp*
+- *Vuejs*
+- *SQL*
 - *flask*
-- *Backend alojado en pythonanywhere*
+- *Backend alojado en* [pythonanywhere] (http://walterjromero.pythonanywhere.com/)
