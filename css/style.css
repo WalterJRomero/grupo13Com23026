@@ -49,10 +49,11 @@ body{
     height: 2rem;
     border-top: black 3px solid;
     border-bottom: black 3px solid;
+    padding: 0 0.5rem 0 0.5rem;
 }
 .navbarcss{
     display: flex;
-    justify-content: space-around;   
+    justify-content: space-between;   
     list-style: none;       
     text-align: center;
     margin:0.3rem;   
@@ -222,7 +223,7 @@ body{
     padding: 0 0 0 2rem
 }
 
- .datos{
+.datos{
     background-color: white;
     border-style:groove;
     border-color: black;
@@ -232,15 +233,15 @@ body{
     flex-flow: column;
     border-radius: 1rem;
     align-items: center;   
- }
- 
+}
+
 .opciones{
     margin: 5px;
     border-style:groove;
     border-color: black;
     font-size: medium;
 }
- 
+
 .bttnForm{
     margin:0 1rem 1rem 1rem;
     width: 50%;    
@@ -266,7 +267,7 @@ body{
 /* MEDIAS */
 
 @media only screen and (min-width: 416px) and (max-width: 966px) {
- 
+
     .fondoLogo{
         background-image: url("../media/img/sonyps5-05.jpg");
         background-position: center;
@@ -295,7 +296,7 @@ body{
         margin: 3rem 10rem;
     }  
 }
-  
+
 @media only screen and (min-width: 967px) {
     
     .fondoLogo{        
@@ -327,5 +328,9 @@ body{
     .formL{
         display: flex;
         justify-content: center;
+    }
+
+    .navbarcss{        
+        justify-content: space-evenly;            
     }
 }  

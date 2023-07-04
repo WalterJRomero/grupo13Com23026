@@ -2,10 +2,8 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            productos: [],
-            //url:'http://localhost:5000/productos',
-            // si el backend esta corriendo local usar localhost 5000(si no lo subieron a pythonanywhere)
-            url: 'https://walterjromero.pythonanywhere.com/pages/productos', // si ya lo subieron a pythonanywhere
+            productos: [],                      
+            url: 'https://walterjromero.pythonanywhere.com/pages/productos', 
             error: false,
             cargando: true,
             /*atributos para el guardar los valores del formulario */
@@ -34,11 +32,29 @@ createApp({
             var options = {
                 method: 'DELETE',
             }
-            fetch(url, options)
-                .then(res => res.text()) // or res.json()
-                .then(res => {
-                    location.reload();
-                })
+            Swal.fire({
+                title: '¿Estas seguro que queres eliminar este producto?',
+                text: "",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Si, eliminar!'
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                    'Producto eliminado',  
+                    '',                  
+                    'success'
+                    )
+                    fetch(url, options)
+                    .then(res => res.text()) // or res.json()
+                    .then(res => {
+                        ;
+                        setTimeout(time=>{location.reload()},1200)
+                    })
+                }
+            })           
         },
         grabar() {
             let producto = {
@@ -47,21 +63,41 @@ createApp({
                 stock: this.stock,
                 imagen: this.imagen
             }
-            var options = {
-                body: JSON.stringify(producto),
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                redirect: 'follow'
+            if (producto.nombre ==''){
+                Swal.fire(
+                    'Ha surgido un error',
+                    'El producto debe tener al menos un nombre',
+                    'error'
+                )
+            } else {
+                var options = {
+                    body: JSON.stringify(producto),
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    redirect: 'follow'
+                }
+                fetch(this.url, options)
+                .then(function () {         
+                    Swal.fire(
+                        'Producto dado de alta',
+                        '',
+                        'sucess'
+                    )
+                    setTimeout(time=>{window.location.href = "./productos.html";},1200)
+                    })
+                    .catch(err => {
+                        console.error(err);
+                        Swal.fire(
+                            'Error el grabar',
+                            '',
+                            'error'
+                        )
+                        setTimeout(time=>{window.location.href = "./productos.html";},1200)
+                })             
+
             }
-            fetch(this.url, options)
-                .then(function () {
-                    alert("Registro grabado")
-                    window.location.href = "./productos.html";
-                })
-                .catch(err => {
-                    console.error(err);
-                    alert("Error al Grabarr")
-                })
+
+
         }
     },
     created() {
